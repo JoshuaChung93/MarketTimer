@@ -19,3 +19,7 @@ https://github.com/dbader/schedule
 퀀트투자를 위한 키움증권 API
 
 https://wikidocs.net/92180
+
+Dataframe 형태 json출력시 문제
+
+https://kibua20.tistory.com/193
