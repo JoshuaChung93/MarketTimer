@@ -1,5 +1,7 @@
 # MarketTimer
 
+2022-09-08 final updated file: MarketTimer_1.0_final.py
+
 - 기본 기능은 아래와 같습니다 
 
 
