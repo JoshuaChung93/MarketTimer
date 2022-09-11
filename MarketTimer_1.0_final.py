@@ -86,6 +86,7 @@ def job():
 schedule.every().day.at("10:00").do(job)
 schedule.every().day.at("12:00").do(job)
 schedule.every().day.at("14:00").do(job)
+schedule.every().day.at("15:30").do(job)
 
 print('Start App..')
 
