@@ -67,7 +67,7 @@ def job():
     # telegram 알람에서 출력하기 위해 datetime64만 json str 형식으로 변환
         row['Date'] = row['Date'].date()
         jsonstr1 = json.dumps(str(row['Date']))
-        Market_timing = (f"{jsonstr1} 현재가가 3 or 5 or 10 단순이동평균보다 높습니다 코스닥_현재가 {z} 3일이동평균 {a} 5일이동평균 {b} 10일이동평균 {c}")
+        Market_timing = (f"{jsonstr1} 현재가가 3 or 5 or 10 단순이동평균보다 높습니다\n 코스닥_현재가 {z}\n 3일이동평균 {a}\n 5일이동평균 {b}\n 10일이동평균 {c}")
         bot.sendMessage(chat_id = public_chat_name, text=Market_timing).chat_id
 #             bot.sendMessage(chat_id = '1760120639', text = Market_timing)
     for index, row in alerts2.iterrows():
@@ -78,7 +78,7 @@ def job():
     # telegram 알람에서 출력하기 위해 datetime64만 json str 형식으로 변환
         row['Date'] = row['Date'].date()
         jsonstr2 = json.dumps(str(row['Date']))
-        Market_timing2 = (f"{jsonstr2} 현재가가 3 and 5 and 10 단순이동평균보다 낮습니다 코스닥_현재가 {z2} 3일이동평균 {a2} 5일이동평균 {b2} 10일이동평균 {c2}")
+        Market_timing2 = (f"{jsonstr2} 현재가가 3 and 5 and 10 단순이동평균보다 낮습니다\n 코스닥_현재가 {z2}\n 3일이동평균 {a2}\n 5일이동평균 {b2}\n 10일이동평균 {c2}")
         bot.sendMessage(chat_id = public_chat_name, text=Market_timing2).chat_id
 
 # 2 시간 마다 실행
