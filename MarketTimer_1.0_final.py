@@ -83,6 +83,7 @@ def job():
 
 # 2 시간 마다 실행
 # schedule.every(2).hours.do(job)
+schedule.every().day.at("09:00").do(job)
 schedule.every().day.at("10:00").do(job)
 schedule.every().day.at("12:00").do(job)
 schedule.every().day.at("14:00").do(job)
