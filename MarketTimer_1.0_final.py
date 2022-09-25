@@ -37,10 +37,10 @@ def job():
         print(weekend)
     
     # 봇 설정
-    API_KEY = '5569257444:AAGV21Ds4fkrxhXkrevkdvQ289vGVcajYTU'
+    API_KEY = 'API KEY'
     bot = telegram.Bot(token=API_KEY)
     bot.get_updates()
-    public_chat_name = '@MarketTimer_alarm_bot'
+    public_chat_name = '@Public chat name'
 #     for i in updates:
 #     print(i.message['chat']['id'])
     
